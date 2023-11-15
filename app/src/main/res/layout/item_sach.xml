@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/vien"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvMaSach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="mã sách"
+                android:textSize="14dp"
+                tools:ignore="TextSizeCheck" />
+            <TextView
+                android:id="@+id/tvTenSach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:layout_marginBottom="5dp"
+                android:text="tên sách"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvGiaThue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:text="GiaThue"/>
+            <TextView
+                android:id="@+id/tvLoai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:text="Loại sách: "/>
+            <TextView
+                android:id="@+id/tvkinhdoanh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:text="Đang kinh doanh: "
+                android:textColor="#FF0000"/>
+            <TextView
+                android:id="@+id/tvsoluong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:text="Số lượng: "/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/deleteSach"
+                android:layout_width="40dp"
+                android:layout_height="100dp"
+                android:src="@drawable/baseline_delete_24"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
